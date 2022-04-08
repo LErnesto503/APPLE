@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    <title>APPLE WEBSITE</title>
+</head>
+<body>
+    
+    <header>
+        <div class="social_media">
+            <ul>
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                <li><ion-icon name="location-outline"></ion-icon></li>
+            </ul>
+        </div>
+        <nav>
+
+            <div class="icon">
+                <ion-icon name="logo-apple"></ion-icon> <span>Apple</span>
+            </div>
+            <ul class="nav_response">
+                <li><a href="#" data-text="MAC">Mac</a></li>
+                <li><a href="#" data-text="!PAD">!Pad</a></li>
+                <li><a href="#" data-text="!PHONE">!Phone</a></li>
+                <li><a href="#" data-text="SOPORTE">Soporte</a></li>
+            </ul>
+            <div class="img">
+                <img src="img/IPad_Air_(4th_generation,_logo).svg.png" alt="!Pad Air">
+            </div>
+            <div class="menu--moon">
+                <div class="moon_icons">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+                <div class="menu_icons">
+                    <ion-icon name="reorder-two-outline"></ion-icon>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="container_text">
+                <div class="text">
+                    <h1>!Pad </h1>
+                    <div class="img">
+                        <img src="img/IPad_Air_(4th_generation,_logo).svg.png" alt="#">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cum nesciunt animi. Amet, voluptatem ratione, similique quo, ipsam tempore molestiae numquam ut vitae alias reprehenderit perspiciatis eligendi corrupti placeat a.</p>
+                <div class="view">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="container_pad">
+                <img src="img/img.png" alt="#">
+            </div>
+
+        </div>
+
+    </header>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const btn = document.querySelector('.menu_icons');
+
+        let bool = false;
+
+        btn.onclick = ()=> {
+            if(bool === false) {
+                document.querySelector('.nav_response').style.left = 0+'px';
+                bool = true;
+            } else {
+                document.querySelector('.nav_response').style.left = -100+'%';
+                bool = false;
+            }
+        }
+    </script>
+</body>
+</html>
